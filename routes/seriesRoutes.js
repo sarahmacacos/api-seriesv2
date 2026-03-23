@@ -8,7 +8,3 @@ router.get('/', controller.listarSeries)
 router.get('/:id', controller.buscarSerie)
 
 module.exports = router
-
-router.post('/', criarSerie)
-
-module.exports = router
