@@ -1,16 +1,15 @@
-# API de Séries v2
+# API de Séries
 
-API REST desenvolvida em **Node.js com Express** para gerenciamento de séries de TV.  
+API REST desenvolvida em Node.js com Express para gerenciamento de séries de TV.
 Permite realizar operações CRUD completas com validação de dados e tratamento de erros.
-Agora Utilizando Get, Post, Put & Delete no PostMan! 
 
 ---
 
 ## Tecnologias Utilizadas
 
-- **Node.js**
-- **Express.js**
-- **Armazenamento em memória** (array)
+- Node.js
+- Express.js
+- Armazenamento em memória (array)
 
 ---
 
@@ -34,8 +33,8 @@ api-series/
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/sarahmacacos/api-series.git
-cd api-series
+git clone https://github.com/sarahmacacos/api-series2.git
+cd api-series2
 
 # 2. Instale as dependências
 npm install
@@ -48,7 +47,7 @@ Servidor rodando em: `http://localhost:3000`
 
 ---
 
-## 📋 Endpoints
+## Endpoints
 
 ### Base URL
 ```
@@ -92,8 +91,6 @@ GET http://localhost:3000/api/series/1
   "ano": 2016
 }
 ```
-
-![GET série por ID](assets/get-id.png)
 
 ---
 
@@ -178,7 +175,7 @@ Content-Type: application/json
 DELETE http://localhost:3000/api/series/10
 ```
 
-**Resposta (204 No Content):**  
+**Resposta (204 No Content):**
 Sem body na resposta — comportamento correto para DELETE.
 
 ![DELETE 204](assets/delete-204.png)
@@ -236,7 +233,7 @@ Sem body na resposta — comportamento correto para DELETE.
 
 Importe o arquivo `collection.postman_collection.json` no Postman para testar todos os endpoints.
 
-**Testes incluídos:**
+Testes incluídos:
 - GET todas as séries
 - GET série por ID (existente)
 - GET série por ID (não encontrada — 404)
@@ -248,3 +245,11 @@ Importe o arquivo `collection.postman_collection.json` no Postman para testar to
 - PUT série inexistente (404)
 - DELETE série (sucesso — 204)
 - DELETE série inexistente (404)
+
+---
+
+## Autora
+
+**Sarah Macacos**
+Estudante de Ciência da Computação — UniFil
+[github.com/sarahmacacos](https://github.com/sarahmacacos)
