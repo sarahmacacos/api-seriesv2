@@ -1,10 +1,12 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 
-const controller = require('./seriesController')
+const controller = require('./seriesController');
 
-router.post('/', controller.criarSerie)
-router.get('/', controller.listarSeries)
-router.get('/:id', controller.buscarSerie)
+router.get('/', controller.listarSeries);
+router.get('/:id', controller.buscarSerie);
+router.post('/', controller.criarSerie);
+router.put('/:id', controller.atualizarSerie);   
+router.delete('/:id', controller.deletarSerie);   
 
-module.exports = router
+module.exports = router;
